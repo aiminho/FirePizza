@@ -1,0 +1,28 @@
+{
+  "products" : {
+    "p1" : {
+      "name" : "Cheese Feast",
+      "price" : 4.5
+    },
+    "p2" : {
+      "name" : "Hawaiian",
+      "price" : 5.3
+    },
+    "p3" : {
+      "name" : "Hot & Spicy",
+      "price" : 5.7
+    },
+    "p4" : {
+      "name" : "Chicken Feast",
+      "price" : 5.7
+    },
+    "p5" : {
+      "name" : "Vegetarian",
+      "price" : 6.1
+    },
+    "p6" : {
+      "name" : "BBQ Pizza",
+      "price" : 8
+    }
+  }
+}
