@@ -14,6 +14,7 @@
 		148E61341AB867E800CE3F18 /* FirePizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E61331AB867E800CE3F18 /* FirePizzaTests.swift */; };
 		148E61441AB8717A00CE3F18 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E61431AB8717A00CE3F18 /* MainMenuViewController.swift */; };
 		148E61461AB873BB00CE3F18 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E61451AB873BB00CE3F18 /* SwiftyJSON.swift */; };
+		148E61481AB87FE600CE3F18 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E61471AB87FE600CE3F18 /* AppConfig.swift */; };
 		31E6D8945402B9669B7FFA4C /* libPods-FirePizza.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54AEC9E283BB7CC7C3AF2BC /* libPods-FirePizza.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		148E613F1AB86DD000CE3F18 /* FirePizza-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirePizza-Bridging-Header.h"; sourceTree = "<group>"; };
 		148E61431AB8717A00CE3F18 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controller/MainMenuViewController.swift; sourceTree = "<group>"; };
 		148E61451AB873BB00CE3F18 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Support/SwiftyJSON.swift; sourceTree = "<group>"; };
+		148E61471AB87FE600CE3F18 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfig.swift; path = Support/AppConfig.swift; sourceTree = "<group>"; };
 		49A6610AA27A26DC3EE844D7 /* Pods-FirePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePizza.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirePizza/Pods-FirePizza.release.xcconfig"; sourceTree = "<group>"; };
 		B54AEC9E283BB7CC7C3AF2BC /* libPods-FirePizza.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirePizza.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE4C3F6D63526D047452FD0 /* Pods-FirePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePizza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirePizza/Pods-FirePizza.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				148E61451AB873BB00CE3F18 /* SwiftyJSON.swift */,
 				148E611C1AB867E800CE3F18 /* Info.plist */,
 				148E613F1AB86DD000CE3F18 /* FirePizza-Bridging-Header.h */,
+				148E61471AB87FE600CE3F18 /* AppConfig.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				148E61461AB873BB00CE3F18 /* SwiftyJSON.swift in Sources */,
+				148E61481AB87FE600CE3F18 /* AppConfig.swift in Sources */,
 				148E61441AB8717A00CE3F18 /* MainMenuViewController.swift in Sources */,
 				148E611E1AB867E800CE3F18 /* AppDelegate.swift in Sources */,
 			);
