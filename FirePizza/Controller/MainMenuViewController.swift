@@ -35,12 +35,17 @@ class MainMenuViewController: UIViewController,UITableViewDataSource,UITableView
         self.menuTableView.alpha = 0;
         
         var ref = RootRef.childByAppendingPath("products")
-        ref.observeSingleEventOfType(FEventType.Value, withBlock: { snapshot in
+        
+        // you can use observeSingleEventOfType for reading data once
+        ref.observeEventType(FEventType.Value, withBlock: { snapshot in
             
             let json = JSON(snapshot.value)
             println("\(json.count)")
             if (json.count != 0) {
                 println("Show Data on Path: \(snapshot.ref)")
+                // clear all product before append when data on firebase have change
+                self.clearProductsArray()
+                
                 for (key:String, subJson:JSON) in json {
                     self.products.append(subJson)
                 }
@@ -60,6 +65,10 @@ class MainMenuViewController: UIViewController,UITableViewDataSource,UITableView
         }, withCancelBlock: { error in
         
         })
+    }
+    
+    func clearProductsArray(){
+        products.removeAll(keepCapacity: false)
     }
     
     //MARK : - TableView Datasource,Delegate
