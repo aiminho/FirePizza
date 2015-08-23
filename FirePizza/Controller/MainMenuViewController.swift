@@ -85,15 +85,15 @@ class MainMenuViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     func cellConfigure(cell: UITableViewCell, product:JSON){
-        let nameLabel = cell.viewWithTag(2) as UILabel
-        let priceLabel = cell.viewWithTag(3) as UILabel
+        let nameLabel = cell.viewWithTag(2) as! UILabel
+        let priceLabel = cell.viewWithTag(3) as! UILabel
         
         nameLabel.text = product["name"].string
         priceLabel.text = "$"+product["price"].stringValue
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("ProductCell") as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("ProductCell") as! UITableViewCell
         let product = products[indexPath.row]
         
         cellConfigure(cell, product: product)
